@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="AL KABEER MARINE — Premier Marine Crewing Agency. 8000+ Crew Successfully Placed Worldwide.">
+  <title>AL KABEER MARINE — Crewing Division</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="https://i.ibb.co/BV9HbC2Z/Screenshot-2026-02-28-at-12-26-07-AM.png" alt="Al Kabeer Logo" height="50">
+      <span class="logo-text">AL KABEER & PARTNERS</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+      <li><a href="marine.html" class="active" data-i18n="nav_marine" style="color: var(--accent);">Marine</a></li>
+      <li><a href="index.html#services" data-i18n="nav_service">Service</a></li>
+      <li><a href="index.html#jobs" data-i18n="nav_jobs">Jobs</a></li>
+      <li><a href="index.html#about" data-i18n="nav_about">About</a></li>
+      <li><a href="index.html#contact-footer" data-i18n="nav_contact">Contact</a></li>
+      <li><a href="#register" class="register-btn" data-i18n="nav_register">Register</a></li>
+    </ul>
+
+    <div class="nav-controls">
+      <button id="lang-toggle" class="lang-btn">EN | العربية</button>
+      <button class="hamburger" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <main id="main" role="main">
+    <!-- Marine Hero -->
+    <section class="hero-premium-section hero-marine">
+      <div class="hero-bg-abstract"></div>
+      <div class="container hero-container">
+        <div class="hero-content" data-aos="fade-up">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span> <span data-i18n="mar_hero_badge">ISO 9001:2015 Certified</span>
+          </div>
+          <h1 class="hero-title">
+            AL KABEER <span class="text-gold-gradient" data-i18n="mar_hero_title_span">MARINE</span>
+          </h1>
+          <p class="hero-description" data-i18n="mar_hero_desc">
+            Premier Marine Crewing Agency. We have successfully placed 8000+ Crew worldwide on Tankers, Bulk Carriers, Containers, and Offshore vessels.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#marine-jobs" class="btn-gold-primary" data-i18n="mar_btn_vacancies">View Vacancies</a>
+            <a href="#register" class="btn-outline-light" data-i18n="mar_btn_pool">Join Our Pool</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Company Profile -->
+    <section class="container" style="padding: 80px 24px;">
+      <div class="about-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: center;">
+        <div data-aos="fade-right">
+          <h2 style="font-family: var(--font-head); font-size: 32px; margin-bottom: 20px; color: var(--text-primary);" data-i18n="mar_profile_title">Marine Division Profile</h2>
+          <p style="color: var(--text-secondary); margin-bottom: 20px;" data-i18n="mar_profile_desc">
+            Al Kabeer Marine is a dedicated division specializing in the recruitment and management of seafarers for the global maritime industry. We are fully MLC 2006 compliant and maintain a vast database of qualified officers and ratings.
+          </p>
+          <ul class="about-list">
+            <li data-i18n="mar_profile_li_1">Supplying crew for Main Fleet & Offshore</li>
+            <li data-i18n="mar_profile_li_2">Strict pre-departure medical & background checks</li>
+            <li data-i18n="mar_profile_li_3">STCW certification verification</li>
+            <li data-i18n="mar_profile_li_4">24/7 Crew support & logistics</li>
+          </ul>
+        </div>
+        <div class="card" data-aos="fade-left">
+          <h3 style="color: var(--accent); margin-top: 0;" data-i18n="mar_vessel_title">Vessel Types Served</h3>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 15px;">
+            <div class="gcc-item" data-i18n="mar_vessel_1">🛢️ Tankers (VLCC)</div>
+            <div class="gcc-item" data-i18n="mar_vessel_2">📦 Bulk Carriers</div>
+            <div class="gcc-item" data-i18n="mar_vessel_3">🚢 Containers</div>
+            <div class="gcc-item" data-i18n="mar_vessel_4">⚓ Offshore / DP</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marine Vacancies -->
+    <section id="marine-jobs" class="jobs container" style="background: var(--bg-light); border-radius: 20px; padding: 60px 24px; margin-bottom: 60px;">
+      <h2 style="text-align: center; font-family: var(--font-head); margin-bottom: 40px; color: var(--text-primary);" data-i18n="mar_vacancies_title">Urgent Marine Vacancies</h2>
+      <div class="job-grid">
+        <div class="job card">
+          <h4 data-i18n="mar_job_master">Master / Captain</h4>
+          <p class="salary" data-i18n="mar_job_master_exp">Exp: 24M+ on Tankers</p>
+          <button class="btn btn-outline apply-btn" data-job="Marine - Master" data-i18n="btn_apply">Apply Now</button>
+        </div>
+        <div class="job card">
+          <h4 data-i18n="mar_job_ce">Chief Engineer</h4>
+          <p class="salary" data-i18n="mar_job_ce_exp">Exp: ME Engine Required</p>
+          <button class="btn btn-outline apply-btn" data-job="Marine - Chief Engineer" data-i18n="btn_apply">Apply Now</button>
+        </div>
+        <div class="job card">
+          <h4 data-i18n="mar_job_co">Chief Officer</h4>
+          <p class="salary" data-i18n="mar_job_co_exp">Vessel: Bulk Carrier</p>
+          <button class="btn btn-outline apply-btn" data-job="Marine - Chief Officer" data-i18n="btn_apply">Apply Now</button>
+        </div>
+        <div class="job card">
+          <h4 data-i18n="mar_job_eto">Electrical Officer (ETO)</h4>
+          <p class="salary" data-i18n="mar_job_eto_exp">High Voltage Cert. Req</p>
+          <button class="btn btn-outline apply-btn" data-job="Marine - ETO" data-i18n="btn_apply">Apply Now</button>
+        </div>
+        <div class="job card">
+          <h4 data-i18n="mar_job_pump">Pumpman</h4>
+          <p class="salary" data-i18n="mar_job_pump_exp">Exp: Framo Pumps</p>
+          <button class="btn btn-outline apply-btn" data-job="Marine - Pumpman" data-i18n="btn_apply">Apply Now</button>
+        </div>
+        <div class="job card">
+          <h4 data-i18n="mar_job_rating">Able Seaman / Oiler</h4>
+          <p class="salary" data-i18n="mar_job_rating_exp">COP Holder Only</p>
+          <button class="btn btn-outline apply-btn" data-job="Marine - Rating" data-i18n="btn_apply">Apply Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Application Form -->
+    <section id="register" class="register container">
+      <h2 data-i18n="register_title">Apply / Register</h2>
+      <div class="card register-card">
+        <p style="text-align:center; color:var(--text-secondary); margin-bottom:24px;" data-i18n="mar_reg_desc">Submit your CV for Marine positions.</p>
+        <form id="applyForm" class="contact-form">
+          <input type="hidden" name="job" id="job" value="Marine General Application">
+          <label><span data-i18n="lbl_name">Name</span><input type="text" name="name" placeholder="Full Name" required></label>
+          <label><span data-i18n="lbl_email">Email</span><input type="email" name="email" placeholder="Email" data-i18n-placeholder="ph_email" required></label>
+          <label><span data-i18n="lbl_rank">Rank / Position</span><input type="text" name="rank" placeholder="e.g. Chief Officer" data-i18n-placeholder="ph_rank" required></label>
+          <label><span data-i18n="lbl_phone">Phone</span><input type="tel" name="phone" placeholder="Phone Number" required></label>
+          <button class="btn btn-primary btn-full-width" type="submit" data-i18n="mar_btn_submit">Submit Application</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
