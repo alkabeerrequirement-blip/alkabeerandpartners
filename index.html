@@ -7,8 +7,6 @@
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://alkabeerandpartners.com/">
   <title>AL KABEER & PARTNERS — Consulting Group</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -19,7 +17,7 @@
     "@type": "Organization",
     "name": "AL KABEER & PARTNERS",
     "url": "https://alkabeerandpartners.com",
-    "logo": "https://alkabeerandpartners.com/assets/favicon.svg",
+    "logo": "https://i.ibb.co/BV9HbC2Z/Screenshot-2026-02-28-at-12-26-07-AM.png",
     "sameAs": [],
     "contactPoint": [{
       "@type": "ContactPoint",
@@ -29,6 +27,685 @@
     }]
   }
   </script>
+
+  <style>
+    :root {
+  /* MODERN CORPORATE PALETTE (Slate & Electric Blue) */
+  --royal-blue: #2563eb;       /* Vivid Blue */
+  --royal-blue-dark: #1e40af;  /* Deep Blue */
+  --navy: #0f172a;             /* Slate 900 */
+  --slate-light: #f1f5f9;      /* Slate 100 */
+  --white: #ffffff;
+  
+  /* PREMIUM GOLD ACCENTS */
+  --gold-main: #D4AF37;
+  --gold-gradient: linear-gradient(135deg, #FFE5A0 0%, #D4AF37 50%, #996515 100%);
+  
+  /* THEME VARIABLES (Light Mode Default) */
+  --bg-body: #f8fafc;          /* Crisp Off-White */
+  --bg-card: #ffffff;
+  --bg-light: #f1f5f9;
+  
+  --text-primary: #0f172a;     /* Dark Navy Text */
+  --text-secondary: #475569;   /* Slate Grey Text */
+  --text-muted: #94a3b8;
+
+  --accent: var(--royal-blue);
+  --accent-hover: var(--royal-blue-dark);
+  
+  --border-subtle: #e2e8f0;    /* Light Grey Border */
+  --border-focus: #3b82f6;
+  
+  --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --shadow-elevated: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-glow: 0 4px 14px 0 rgba(37, 99, 235, 0.3);
+  
+  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-head: 'Montserrat', system-ui, sans-serif;
+  --max-width: 1200px;
+
+  /* Dynamic Backgrounds */
+  --bg-navbar: rgba(255, 255, 255, 0.9);
+  --bg-hero-gradient: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  --text-gradient-start: #1e40af;
+}
+
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--text-primary) !important;
+  background-color: var(--bg-body) !important;
+  line-height: 1.6;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* TEXT FIX – mobile + desktop */
+p, h1, h2, h3, h4, h5, h6, span, a, li {
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+/* Accessibility */
+.skip-link {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.skip-link:focus {
+  clip: auto;
+  width: auto;
+  height: auto;
+  margin: 0;
+  top: 12px;
+  left: 12px;
+  background: #fff;
+  color: #000;
+  padding: 8px;
+  border-radius: 6px;
+  z-index: 9999;
+}
+[dir="rtl"] .skip-link:focus {
+  left: auto;
+  right: 12px;
+}
+
+/* Layout */
+.container{max-width:var(--max-width);margin:0 auto;padding:0 24px}
+
+/* NAVBAR BASE */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  font-family: var(--font-main);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--bg-navbar) !important;
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.logo-text {
+  color: var(--text-primary);
+  font-size: 22px;
+  font-weight: 800;
+  font-family: var(--font-head);
+  letter-spacing: -0.5px;
+}
+
+/* LINKS */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 50px; /* Pill shape */
+  background-color: transparent;
+  box-shadow: none;
+  transition: all 0.2s ease;
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* HOVER / TOUCH EFFECT */
+.nav-links a:hover {
+  background-color: rgba(37, 99, 235, 0.1);
+  box-shadow: none;
+  transform: translateY(0);
+  color: var(--accent);
+}
+
+/* REGISTER BUTTON – EXTRA STRONG */
+.nav-links a.register-btn {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #ffffff;
+  box-shadow: var(--shadow-glow);
+  font-weight: 700;
+  border: 1px solid transparent;
+}
+
+.nav-links a.register-btn:hover {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+}
+
+/* LANGUAGE BUTTON */
+.lang-btn {
+  background: transparent;
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  font-size: 13px;
+  padding: 8px 16px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* HAMBURGER MENU (Mobile) */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 0;
+  z-index: 1100;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: var(--text-primary);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hamburger Animation to X */
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Buttons (General) */
+.btn{font-weight:600;padding:12px 24px;border-radius:8px;border:1px solid transparent;cursor:pointer;transition:all 0.2s;font-size:14px}
+.btn-primary{background:var(--accent);color:#fff; box-shadow: var(--shadow-glow);}
+.btn-primary:hover{background:var(--accent-hover); transform:translateY(-2px);}
+.btn-outline{background:transparent;border:2px solid var(--accent);color:var(--accent)}
+.btn-outline:hover{background:var(--accent); color: #fff; border-color:var(--accent);}
+
+/* Hero Section */
+.hero-premium-section {
+  position: relative;
+  padding: 100px 0 80px;
+  background: #0f172a; /* Dark Navy for Premium Feel */
+  color: #fff;
+  overflow: hidden;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-premium-section#home .hero-bg-abstract {
+  position: absolute; inset: 0; z-index: 0;
+  background: linear-gradient(to left, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.62) 48%, rgba(15, 23, 42, 0.3) 100%),
+              url('https://images.pexels.com/photos/36594202/pexels-photo-36594202.jpeg?auto=compress&cs=tinysrgb&w=2200&h=1000&fit=crop');
+  background-size: cover;
+  background-position: left center;
+  transform: scaleX(-1);
+}
+
+.hero-marine .hero-bg-abstract {
+  position: absolute; inset: 0; z-index: 0;
+  background: radial-gradient(circle at 80% 20%, rgba(37, 99, 235, 0.15) 0%, transparent 50%),
+              radial-gradient(circle at 20% 80%, rgba(212, 175, 55, 0.08) 0%, transparent 50%);
+}
+
+@media (max-width: 599px) {
+  .hero-premium-section#home .hero-bg-abstract { background-position: left center; }
+}
+
+.hero-container {
+  position: relative; z-index: 2;
+  display: grid; grid-template-columns: 1fr; gap: 50px;
+  align-items: center;
+}
+
+/* Hero Text Content */
+.hero-content { display: flex; flex-direction: column; gap: 24px; text-align: center; align-items: center; }
+
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 6px 16px; background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50px; font-size: 12px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 1px; color: var(--gold-main);
+}
+.pulse-dot { width: 8px; height: 8px; background: var(--gold-main); border-radius: 50%; box-shadow: 0 0 10px var(--gold-main); }
+
+.hero-title {
+  font-family: var(--font-head); font-size: 42px; line-height: 1.1;
+  font-weight: 800; color: #fff; margin: 0;
+}
+
+.text-gold-gradient {
+  background: var(--gold-gradient);
+  background-clip: text;
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+
+.hero-description {
+  font-size: 16px; color: #cbd5e1; max-width: 600px; line-height: 1.7; margin: 0;
+}
+
+/* Hero Buttons */
+.hero-cta-group { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; margin-top: 10px; }
+
+.btn-gold-primary {
+  background: var(--gold-gradient);
+  color: #0f172a; padding: 14px 32px; border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn-gold-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5); }
+
+.btn-outline-light {
+  background: transparent; border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff; padding: 14px 32px; border-radius: 50px;
+  font-weight: 600; text-decoration: none;
+  transition: all 0.2s;
+}
+.btn-outline-light:hover { border-color: #fff; background: rgba(255, 255, 255, 0.05); }
+
+/* Metrics */
+.hero-metrics {
+  display: flex; align-items: center; gap: 24px; margin-top: 20px;
+  padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.metric-item { display: flex; flex-direction: column; align-items: center; }
+.metric-item strong { font-size: 24px; color: #fff; font-weight: 800; line-height: 1; }
+.metric-item strong.metric-heading { font-size: 14px; line-height: 1.3; }
+.metric-item span { font-size: 12px; color: #94a3b8; text-transform: uppercase; margin-top: 4px; }
+.metric-divider { width: 1px; height: 30px; background: rgba(255, 255, 255, 0.2); }
+
+/* Hero Visual */
+.hero-visual-wrapper { display: flex; justify-content: center; position: relative; }
+.hero-image-frame { position: relative; max-width: 500px; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.3); }
+.hero-main-img { width: 100%; display: block; border-radius: 20px; }
+.gold-border-accent {
+  position: absolute; inset: 0; border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 20px; pointer-events: none;
+}
+
+/* Desktop Adjustments */
+@media (min-width: 900px) {
+  .hero-container { grid-template-columns: 1.2fr 1fr; text-align: left; }
+  .hero-premium-section#home .hero-container { grid-template-columns: 1fr; }
+  .hero-content { align-items: flex-start; text-align: left; }
+  .hero-title { font-size: 56px; }
+  .hero-description { font-size: 18px; }
+  .hero-cta-group { justify-content: flex-start; }
+  .metric-item { align-items: flex-start; }
+  
+  /* Visual Offset */
+  .hero-image-frame { transform: perspective(1000px) rotateY(-5deg); transition: transform 0.5s; }
+  .hero-visual-wrapper:hover .hero-image-frame { transform: perspective(1000px) rotateY(0deg); }
+}
+
+/* Marine Hero Specifics */
+.hero-marine {
+  background: linear-gradient(to right, #0f172a 30%, rgba(15, 23, 42, 0.4) 100%), url('https://i.ibb.co/xKgCb4BK/Screenshot-2026-02-28-at-12-58-43-AM.png');
+  background-size: cover; /* Ya 'contain' agar aap puri photo dikhana chahte hain bina crop kiye */
+  background-position: right center; /* Photo ko right side align karega */
+}
+
+/* Cards */
+.card{background:var(--bg-card); padding:30px;border-radius:16px;box-shadow:var(--shadow-card);border:1px solid var(--border-subtle);transition:transform 0.3s, box-shadow 0.3s}
+.card:hover{transform:translateY(-8px);box-shadow:var(--shadow-elevated);border-color:var(--accent)}
+
+/* About Section */
+.about{padding:60px 0}
+.about-two-column .about-grid{display:grid;grid-template-columns:1fr;gap:30px;align-items:center}
+.about-copy h2{font-family:var(--font-head);font-size:32px;margin:0 0 16px;color:var(--text-primary)}
+.about-copy p{color:var(--text-secondary);margin-bottom:24px}
+.about-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr;gap:12px}
+.about-list li{font-size:14px;color:var(--text-primary);display:flex;align-items:center;gap:8px}
+.about-list li::before{content:"✓";color:var(--accent)}
+
+/* Why Choose Us */
+.why{padding:60px 0}
+.why h2{font-family:var(--font-head);font-size:32px;text-align:center;margin-bottom:40px}
+.why-grid{display:grid;grid-template-columns:1fr;gap:20px}
+.why-item h4{color:var(--accent);margin:0 0 8px;font-size:18px}
+.why-item p{color:var(--text-secondary);font-size:14px;margin:0}
+
+/* Services Section - Light Theme */
+#services {
+  background-color: var(--bg-light);
+  color: var(--text-primary);
+  padding: 60px 0;
+  margin-top: 40px;
+}
+
+#services h2 {
+  color: var(--text-primary);
+  font-family: var(--font-head);
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+#services .card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-light);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+#services .card:hover {
+  box-shadow: 0 12px 30px rgba(65, 105, 225, 0.15);
+  transform: translateY(-4px);
+}
+
+#services .service-icon { font-size: 32px; margin-bottom: 16px; }
+#services h3 { color: var(--text-on-light); margin: 0 0 10px; font-size: 18px; }
+#services p { color: var(--text-muted-light); margin: 0; font-size: 14px; }
+
+/* GCC Countries Section */
+#gcc-countries { padding: 60px 0; }
+#gcc-countries h2 { font-family: var(--font-head); font-size: 32px; text-align: center; margin-bottom: 16px; color: var(--text-primary); }
+#gcc-countries p { text-align: center; color: var(--text-secondary); max-width: 600px; margin: 0 auto 40px; }
+
+.gcc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+}
+
+.gcc-item {
+  background: var(--bg-card);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 15px;
+  transition: transform 0.2s, border-color 0.2s, color 0.2s;
+  cursor: default;
+}
+
+.gcc-item:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  color: var(--accent);
+  box-shadow: var(--shadow-card);
+}
+
+/* Jobs Section */
+.jobs{padding:60px 0}
+.jobs h2{font-family:var(--font-head);font-size:32px;text-align:center;margin-bottom:40px}
+.job-grid{display:grid;grid-template-columns:1fr;gap:20px}
+.job h4{margin:0 0 6px;color:var(--text-primary); font-size: 18px; font-weight: 700;}
+.job .salary{color:var(--text-secondary);margin:0 0 16px;font-size:14px;font-weight:500}
+.job .role-desc{color:var(--text-secondary);margin:0 0 16px;font-size:14px;line-height:1.5;}
+.offshore-subsection{padding-top:32px}
+.offshore-subsection h3{font-family:var(--font-head);font-size:24px;color:var(--text-primary);margin:0 0 20px}
+.offshore-intro{color:var(--text-secondary);max-width:820px;margin:0 auto 24px;text-align:center}
+.offshore-filter{display:block;max-width:420px;margin:0 auto 24px;color:var(--text-secondary);font-size:14px}
+.offshore-detail{display:block;margin-top:6px;color:var(--text-secondary);font-size:13px;font-weight:400;line-height:1.5}
+.offshore-job-category[hidden]{display:none}
+
+.contact-form{max-width:600px;display:flex;flex-direction:column;gap:16px}
+.contact-form label{display:block;font-size:14px;color:var(--text-secondary);margin-bottom:4px}
+
+.btn-full-width {
+  width: 100%;
+  margin-top: 12px;
+}
+
+/* Register Section */
+.register { padding: 0 0 60px; }
+.register h2 { font-family: var(--font-head); font-size: 32px; text-align: center; margin-bottom: 30px; color: var(--text-primary); }
+.register-card { max-width: 600px; margin: 0 auto; }
+
+input, textarea, select {
+  width: 100%;
+  padding: 12px;
+  background: #f1f5f9;
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Footer */
+.site-footer {
+  background: #0f172a; /* Always dark footer */
+  border-top: 1px solid var(--border-subtle);
+  padding: 60px 0 30px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.footer-content { display: grid; grid-template-columns: 1fr; gap: 40px; text-align: center; }
+.footer-col h4 { color: #e6f1ff; margin: 0 0 24px; font-size: 16px; text-transform: uppercase; letter-spacing: 1px; }
+.footer-brand-lockup { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+.footer-contact-list, .footer-links-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; }
+.footer-contact-list a, .footer-links-list a { color: #cbd5e1; text-decoration: none; }
+.footer-contact-list a:hover, .footer-links-list a:hover { color: var(--accent); }
+.footer-map { width: 100%; height: 180px; margin-top: 20px; border: 0; border-radius: 8px; opacity: 0.8; }
+.commitment-grid { margin-bottom: 32px; }
+.recruitment-cta { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+.footer-legal { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
+.footer-bottom { text-align: center; margin-top: 60px; padding-top: 30px; border-top: 1px solid var(--border-subtle); opacity: 0.6; }
+
+/* WhatsApp */
+.whatsapp-btn-glow {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: #25D366; color: #fff !important;
+  padding: 8px 16px; border-radius: 50px; font-weight: 600;
+  margin-top: 8px; font-size: 13px;
+}
+.whatsapp-fab {
+  position: fixed; right: 24px; bottom: 24px;
+  background: #25D366; border-radius: 50%;
+  width: 60px; height: 60px;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+  z-index: 100; transition: transform 0.2s;
+}
+.whatsapp-fab:hover { transform: scale(1.1); }
+
+/* =============================================== */
+/* Tablet & Medium Screens */
+/* =============================================== */
+@media (min-width: 600px) {
+  .why-grid, .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .job-grid { grid-template-columns: repeat(2, 1fr); }
+  .about-list{ grid-template-columns: 1fr 1fr; }
+}
+
+/* =============================================== */
+/* Desktop & Large Screens */
+/* =============================================== */
+@media (min-width: 900px) {
+  .about-two-column .about-grid { grid-template-columns: 1fr 1fr; }
+  .why-grid { grid-template-columns: repeat(4, 1fr); }
+  .services-grid { grid-template-columns: repeat(4, 1fr); }
+  .job-grid { grid-template-columns: repeat(3, 1fr); }
+
+  .footer-content { grid-template-columns: 1.2fr 1fr 1fr 1.35fr; gap: 32px; text-align: left; }
+  .footer-brand-lockup { justify-content: flex-start; }
+}
+
+/* Mobile & Tablet Adjustments */
+@media (max-width: 899px) {
+  .navbar {
+    /* Keep navbar horizontal */
+    flex-direction: row;
+    padding: 12px 24px;
+  }
+
+  .logo-text {
+    display: none; /* Hide text logo on small screens */
+  }
+
+  .hamburger {
+    display: flex; /* Show hamburger icon */
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Hidden off-screen to the right */
+    width: 100%;
+    height: 100vh;
+    background: rgba(15, 23, 42, 0.98); /* Dark overlay with blur */
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
+    padding: 20px;
+    flex-wrap: nowrap; /* Prevent wrapping inside menu */
+  }
+
+  .nav-links.active {
+    right: 0; /* Slide in */
+  }
+
+  .nav-links a {
+    font-size: 20px;
+    color: #fff;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  .nav-links a:hover {
+    color: var(--royal-blue);
+    background: transparent;
+  }
+
+  /* Invert hamburger color when menu is open for visibility */
+  .hamburger.active .bar {
+    background-color: #fff;
+  }
+
+  /* RTL Specifics for Mobile Menu */
+  [dir="rtl"] .nav-links {
+    right: auto;
+    left: -100%;
+    transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  [dir="rtl"] .nav-links.active {
+    left: 0;
+    right: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+/* =============================================== */
+/* RTL / ARABIC SUPPORT                            */
+/* =============================================== */
+
+[dir="rtl"] body {
+  font-family: 'Tajawal', 'Segoe UI', Tahoma, sans-serif;
+  text-align: right;
+  direction: rtl;
+}
+
+[dir="rtl"] .nav-links {
+  padding-right: 0;
+}
+
+[dir="rtl"] .hero-content,
+[dir="rtl"] .footer-content,
+[dir="rtl"] .footer-col,
+[dir="rtl"] .hero-container {
+  text-align: right;
+}
+
+/* Fix WhatsApp Icon margin in RTL */
+[dir="rtl"] .whatsapp-btn-glow svg {
+  margin-right: 0 !important;
+  margin-left: 8px !important;
+}
+
+/* Ensure grid/flex alignment mirrors correctly */
+[dir="rtl"] .about-list li::before { margin-left: 8px; margin-right: 0; }
+
+html[dir="rtl"], 
+html[dir="rtl"] body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+html[dir="rtl"] * {
+  max-width: 100%;
+  word-break: break-word;
+}
+
+html[dir="rtl"] .container,
+html[dir="rtl"] section {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+}
+
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -40,9 +717,10 @@
 
     <ul class="nav-links">
       <li><a href="#home" data-i18n="nav_home">Home</a></li>
-      <li><a href="marine.html" data-i18n="nav_marine">Marine</a></li>
+      <li><a href="#marine-jobs" data-i18n="nav_marine">Marine</a></li>
+      <li><a href="#offshore">Offshore</a></li>
       <li><a href="#services" data-i18n="nav_service">Service</a></li>
-      <li><a href="#jobs" data-i18n="nav_jobs">Jobs</a></li>
+      <li><a href="#offshore-jobs" data-i18n="nav_jobs">Jobs</a></li>
       <li><a href="#about" data-i18n="nav_about">About</a></li>
       <li><a href="#contact-footer" data-i18n="nav_contact">Contact</a></li>
       <li><a href="#register" class="register-btn" data-i18n="nav_register">Register</a></li>
@@ -70,33 +748,26 @@
           </div>
           
           <h1 class="hero-title">
-            <span data-i18n="hero_title_1">Forging Success with</span> <br>
-            <span class="text-gold-gradient" data-i18n="hero_title_2">Elite Global Talent</span>
+            <span data-i18n="hero_title_1">Powering Marine Operations with</span> <br>
+            <span class="text-gold-gradient" data-i18n="hero_title_2">Skilled Global Talent</span>
           </h1>
           
           <p class="hero-description" data-i18n="hero_desc">
-            Your strategic partner for ethical, compliant, and efficient manpower solutions. We bridge the gap between ambition and achievement across the GCC.
+            Your trusted manpower partner for Marine, Offshore and Onshore operations. We connect qualified seafarers, offshore professionals and skilled technical personnel with leading maritime, energy and industrial projects across the GCC and global markets.
           </p>
           
           <div class="hero-cta-group">
-            <a href="#register" class="btn-gold-primary" data-i18n="btn_hire">Hire Talent</a>
-            <a href="#jobs" class="btn-outline-light" data-i18n="btn_find_jobs">Find Jobs</a>
+            <a href="#register" class="btn-gold-primary" data-i18n="btn_hire">Hire Marine &amp; Offshore Talent</a>
+            <a href="#offshore-jobs" class="btn-outline-light" data-i18n="btn_find_jobs">Find Opportunities</a>
           </div>
 
           <div class="hero-metrics">
-            <div class="metric-item"><strong>15+</strong> <span data-i18n="metric_years">Years Excellence</span></div>
+            <div class="metric-item"><strong class="metric-heading">Marine &amp; Offshore</strong> <span data-i18n="metric_years">Professional Crew &amp; Technical Personnel</span></div>
             <div class="metric-divider"></div>
-            <div class="metric-item"><strong>100%</strong> <span data-i18n="metric_compliance">Compliance</span></div>
+            <div class="metric-item"><strong class="metric-heading">Offshore &amp; Onshore</strong> <span data-i18n="metric_compliance">Skilled Manpower Solutions</span></div>
           </div>
         </div>
 
-        <!-- Visual Content -->
-        <div class="hero-visual-wrapper" data-aos="fade-left" data-aos-duration="1200">
-          <div class="hero-image-frame">
-            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1000&q=80" alt="Corporate Meeting" class="hero-main-img">
-            <div class="gold-border-accent"></div>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -107,12 +778,14 @@
         </div>
         <div class="about-copy" data-aos="fade-left">
           <h2 data-i18n="about_title">About Al Kabeer &amp; Partners</h2>
-          <p data-i18n="about_desc">Headquartered in Dubai, Al Kabeer & Partners is a premier government-licensed recruitment consultancy. We specialize in sourcing top-tier talent for industries ranging from construction to corporate management.</p>
+          <p data-i18n="about_desc">Al Kabeer &amp; Partners is a professional manpower and recruitment partner specializing in Marine, Offshore, Onshore and Technical workforce solutions. We connect qualified seafarers, offshore professionals, engineers and skilled personnel with marine, energy and industrial projects across the GCC and international markets.</p>
           <ul class="about-list">
-            <li data-i18n="about_li_1">Government-approved & compliant</li>
-            <li data-i18n="about_li_2">Transparent fees and documentation</li>
-            <li data-i18n="about_li_3">Verified employer network across GCC</li>
-            <li data-i18n="about_li_4">Ethical & secure placements</li>
+            <li data-i18n="about_li_1">Marine &amp; Offshore Manpower Solutions</li>
+            <li data-i18n="about_li_2">Qualified Seafarers &amp; Technical Professionals</li>
+            <li data-i18n="about_li_3">Offshore Rig &amp; Vessel Personnel</li>
+            <li data-i18n="about_li_4">Engineering, Skilled Trades &amp; HSE Professionals</li>
+            <li data-i18n="about_li_5">Professional Candidate Screening &amp; Documentation</li>
+            <li data-i18n="about_li_6">Manpower Support for Marine, Energy &amp; Industrial Projects</li>
           </ul>
         </div>
       </div>
@@ -170,7 +843,7 @@
       <h2 data-i18n="gcc_title">International Opportunities in the GCC</h2>
       <p data-i18n="gcc_desc">We provide recruitment services across the Gulf Cooperation Council (GCC) countries, connecting talent with leading employers in:</p>
       <ul class="gcc-grid">
-        <li class="gcc-item" data-i18n="country_uae">�🇪 UAE</li>
+        <li class="gcc-item" data-i18n="country_uae">🇦🇪 UAE</li>
         <li class="gcc-item" data-i18n="country_ksa">🇸🇦 Saudi Arabia</li>
         <li class="gcc-item" data-i18n="country_qatar">🇶🇦 Qatar</li>
         <li class="gcc-item" data-i18n="country_kuwait">🇰🇼 Kuwait</li>
@@ -179,44 +852,210 @@
       </ul>
     </section>
 
-    <section id="jobs" class="jobs container">
-      <h2 data-i18n="jobs_title">Current Vacancies</h2>
+    <section class="hero-premium-section hero-marine">
+      <div class="hero-bg-abstract"></div>
+      <div class="container hero-container">
+        <div class="hero-content" data-aos="fade-up">
+          <div class="hero-badge"><span class="pulse-dot"></span> <span data-i18n="mar_hero_badge">ISO 9001:2015 Certified</span></div>
+          <h2 class="hero-title">AL KABEER <span class="text-gold-gradient" data-i18n="mar_hero_title_span">MARINE</span></h2>
+          <p class="hero-description" data-i18n="mar_hero_desc">Premier Marine Crewing Agency. We have successfully placed 8000+ Crew worldwide on Tankers, Bulk Carriers, Containers, and Offshore vessels.</p>
+          <div class="hero-cta-group">
+            <a href="#marine-jobs" class="btn-gold-primary" data-i18n="mar_btn_vacancies">View Vacancies</a>
+            <a href="#register" class="btn-outline-light marine-register-btn" data-i18n="mar_btn_pool">Join Our Pool</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" style="padding: 80px 24px;">
+      <div class="about-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: center;">
+        <div data-aos="fade-right">
+          <h2 style="font-family: var(--font-head); font-size: 32px; margin-bottom: 20px; color: var(--text-primary);" data-i18n="mar_profile_title">Marine Division Profile</h2>
+          <p style="color: var(--text-secondary); margin-bottom: 20px;" data-i18n="mar_profile_desc">Al Kabeer Marine is a dedicated division specializing in the recruitment and management of seafarers for the global maritime industry. We are fully MLC 2006 compliant and maintain a vast database of qualified officers and ratings.</p>
+          <ul class="about-list">
+            <li data-i18n="mar_profile_li_1">Supplying crew for Main Fleet &amp; Offshore</li>
+            <li data-i18n="mar_profile_li_2">Strict pre-departure medical &amp; background checks</li>
+            <li data-i18n="mar_profile_li_3">STCW certification verification</li>
+            <li data-i18n="mar_profile_li_4">24/7 Crew support &amp; logistics</li>
+          </ul>
+        </div>
+        <div class="card" data-aos="fade-left">
+          <h3 style="color: var(--accent); margin-top: 0;" data-i18n="mar_vessel_title">Vessel Types Served</h3>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 15px;">
+            <div class="gcc-item" data-i18n="mar_vessel_1">🛢️ Tankers (VLCC)</div>
+            <div class="gcc-item" data-i18n="mar_vessel_2">📦 Bulk Carriers</div>
+            <div class="gcc-item" data-i18n="mar_vessel_3">🚢 Containers</div>
+            <div class="gcc-item" data-i18n="mar_vessel_4">⚓ Offshore / DP</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="marine-jobs" class="jobs container" style="background: var(--bg-light); border-radius: 20px; padding: 60px 24px; margin-bottom: 60px;">
+      <h2 style="text-align: center; font-family: var(--font-head); margin-bottom: 40px; color: var(--text-primary);" data-i18n="mar_vacancies_title">Urgent Marine Vacancies</h2>
       <div class="job-grid">
-        <div class="job card">
-          <h4 data-i18n="job_security">Security Guards</h4>
-          <p class="role-desc" data-i18n="desc_security">Protecting assets with vigilance and integrity.</p>
-          <button class="btn btn-outline apply-btn" data-job="Security Guards" data-i18n="btn_apply">Apply Now</button>
+        <div class="job card"><h4 data-i18n="mar_job_master">Master / Captain</h4><p class="salary" data-i18n="mar_job_master_exp">Exp: 24M+ on Tankers</p><button class="btn btn-outline apply-btn" data-job="Marine - Master" data-i18n="btn_apply">Apply Now</button></div>
+        <div class="job card"><h4 data-i18n="mar_job_ce">Chief Engineer</h4><p class="salary" data-i18n="mar_job_ce_exp">Exp: ME Engine Required</p><button class="btn btn-outline apply-btn" data-job="Marine - Chief Engineer" data-i18n="btn_apply">Apply Now</button></div>
+        <div class="job card"><h4 data-i18n="mar_job_co">Chief Officer</h4><p class="salary" data-i18n="mar_job_co_exp">Vessel: Bulk Carrier</p><button class="btn btn-outline apply-btn" data-job="Marine - Chief Officer" data-i18n="btn_apply">Apply Now</button></div>
+        <div class="job card"><h4 data-i18n="mar_job_eto">Electrical Officer (ETO)</h4><p class="salary" data-i18n="mar_job_eto_exp">High Voltage Cert. Req</p><button class="btn btn-outline apply-btn" data-job="Marine - ETO" data-i18n="btn_apply">Apply Now</button></div>
+        <div class="job card"><h4 data-i18n="mar_job_pump">Pumpman</h4><p class="salary" data-i18n="mar_job_pump_exp">Exp: Framo Pumps</p><button class="btn btn-outline apply-btn" data-job="Marine - Pumpman" data-i18n="btn_apply">Apply Now</button></div>
+        <div class="job card"><h4 data-i18n="mar_job_rating">Able Seaman / Oiler</h4><p class="salary" data-i18n="mar_job_rating_exp">COP Holder Only</p><button class="btn btn-outline apply-btn" data-job="Marine - Rating" data-i18n="btn_apply">Apply Now</button></div>
+      </div>
+    </section>
+
+    <section id="offshore" class="jobs container">
+      <h2>Offshore Operations</h2>
+      <p class="offshore-intro">Offshore operations bring together specialist personnel, vessels and equipment across drilling, production, construction and marine activities.</p>
+
+      <div class="offshore-subsection" data-aos="fade-up">
+        <h3>Offshore Operations</h3>
+        <ul class="gcc-grid">
+          <li class="gcc-item"><strong>Offshore Drilling</strong><span class="offshore-detail">Well construction and drilling support.</span></li>
+          <li class="gcc-item"><strong>Offshore Production</strong><span class="offshore-detail">Operation and monitoring of offshore production facilities.</span></li>
+          <li class="gcc-item"><strong>Offshore Construction</strong><span class="offshore-detail">Construction work for offshore structures and facilities.</span></li>
+          <li class="gcc-item"><strong>Offshore Maintenance</strong><span class="offshore-detail">Planned and corrective maintenance offshore.</span></li>
+          <li class="gcc-item"><strong>Offshore Installation</strong><span class="offshore-detail">Installation of offshore structures and systems.</span></li>
+          <li class="gcc-item"><strong>Hook-up &amp; Commissioning</strong><span class="offshore-detail">Connecting systems and preparing facilities for operation.</span></li>
+          <li class="gcc-item"><strong>Well Intervention</strong><span class="offshore-detail">Intervention and service activities on existing wells.</span></li>
+          <li class="gcc-item"><strong>Workover Operations</strong><span class="offshore-detail">Well service and workover support.</span></li>
+          <li class="gcc-item"><strong>Decommissioning</strong><span class="offshore-detail">Planning and support for retirement of offshore assets.</span></li>
+          <li class="gcc-item"><strong>Subsea Operations</strong><span class="offshore-detail">Installation, inspection and maintenance of subsea systems.</span></li>
+          <li class="gcc-item"><strong>Offshore Logistics</strong><span class="offshore-detail">Coordination of personnel, materials and equipment.</span></li>
+          <li class="gcc-item"><strong>Marine Operations</strong><span class="offshore-detail">Vessel coordination and marine support for offshore work.</span></li>
+        </ul>
+      </div>
+
+      <div class="offshore-subsection" data-aos="fade-up">
+        <h3>Offshore Rigs</h3>
+        <ul class="gcc-grid">
+          <li class="gcc-item"><strong>Jack-Up Rigs</strong><span class="offshore-detail">Mobile drilling units used for offshore well operations.</span></li>
+          <li class="gcc-item"><strong>Semi-Submersible Rigs</strong><span class="offshore-detail">Floating units designed to support offshore drilling.</span></li>
+          <li class="gcc-item"><strong>Drillships</strong><span class="offshore-detail">Ships equipped and operated for offshore drilling work.</span></li>
+          <li class="gcc-item"><strong>Platform Rigs</strong><span class="offshore-detail">Drilling rigs operating from offshore platforms.</span></li>
+          <li class="gcc-item"><strong>Tender-Assisted Drilling Units</strong><span class="offshore-detail">Tender units provide support for platform drilling operations.</span></li>
+          <li class="gcc-item"><strong>Mobile Offshore Drilling Units (MODUs)</strong><span class="offshore-detail">Mobile units used for offshore drilling operations.</span></li>
+        </ul>
+      </div>
+
+      <div class="offshore-subsection" data-aos="fade-up">
+        <h3>Offshore Vessels</h3>
+        <ul class="gcc-grid">
+          <li class="gcc-item">Platform Supply Vessel (PSV)</li>
+          <li class="gcc-item">Anchor Handling Tug Supply (AHTS)</li>
+          <li class="gcc-item">Offshore Support Vessel (OSV)</li>
+          <li class="gcc-item">Diving Support Vessel (DSV)</li>
+          <li class="gcc-item">Construction Support Vessel</li>
+          <li class="gcc-item">Heavy Lift Vessel</li>
+          <li class="gcc-item">Pipe-Laying Vessel</li>
+          <li class="gcc-item">Cable-Laying Vessel</li>
+          <li class="gcc-item">Well Intervention Vessel</li>
+          <li class="gcc-item">Accommodation Vessel</li>
+          <li class="gcc-item">Fast Support Vessel</li>
+        </ul>
+      </div>
+
+      <div class="offshore-subsection" data-aos="fade-up">
+        <h3>Offshore Equipment</h3>
+        <ul class="gcc-grid">
+          <li class="gcc-item"><strong>Drilling Derrick</strong><span class="offshore-detail">Supports drilling equipment and tubular handling.</span></li>
+          <li class="gcc-item"><strong>Top Drive</strong><span class="offshore-detail">Rotates the drill string during drilling operations.</span></li>
+          <li class="gcc-item"><strong>Drawworks</strong><span class="offshore-detail">Provides hoisting control for drilling operations.</span></li>
+          <li class="gcc-item"><strong>Mud Pumps</strong><span class="offshore-detail">Circulate drilling fluid through the well system.</span></li>
+          <li class="gcc-item"><strong>Blowout Preventer (BOP)</strong><span class="offshore-detail">Well-control equipment used to seal and control a well.</span></li>
+          <li class="gcc-item"><strong>Wellhead</strong><span class="offshore-detail">Surface equipment supporting and sealing the well.</span></li>
+          <li class="gcc-item"><strong>Mud System</strong><span class="offshore-detail">Manages drilling-fluid storage, treatment and circulation.</span></li>
+          <li class="gcc-item"><strong>Offshore Cranes</strong><span class="offshore-detail">Handle loads between vessels and offshore facilities.</span></li>
+          <li class="gcc-item"><strong>Winches</strong><span class="offshore-detail">Provide controlled line handling and pulling.</span></li>
+          <li class="gcc-item"><strong>Mooring Systems</strong><span class="offshore-detail">Maintain position using anchors, lines or related equipment.</span></li>
+          <li class="gcc-item"><strong>Dynamic Positioning</strong><span class="offshore-detail">Computer-controlled systems help vessels maintain position.</span></li>
+          <li class="gcc-item"><strong>ROV Systems</strong><span class="offshore-detail">Remotely operated vehicles support subsea tasks.</span></li>
+          <li class="gcc-item"><strong>Generators</strong><span class="offshore-detail">Supply electrical power for offshore systems.</span></li>
+          <li class="gcc-item"><strong>Compressors</strong><span class="offshore-detail">Provide compressed air or gas for operational systems.</span></li>
+          <li class="gcc-item"><strong>Pumps</strong><span class="offshore-detail">Move fluids for process and utility duties.</span></li>
+          <li class="gcc-item"><strong>Fire &amp; Gas Systems</strong><span class="offshore-detail">Detect hazards and support protective responses.</span></li>
+          <li class="gcc-item"><strong>Emergency Shutdown Systems</strong><span class="offshore-detail">Bring designated processes to a safe state during emergencies.</span></li>
+          <li class="gcc-item"><strong>Lifeboats</strong><span class="offshore-detail">Provide means of evacuation in an emergency.</span></li>
+          <li class="gcc-item"><strong>Helideck</strong><span class="offshore-detail">Designated landing area for helicopter operations.</span></li>
+        </ul>
+      </div>
+
+      <div class="offshore-subsection" data-aos="fade-up">
+        <h3>Offshore Job Categories</h3>
+        <p class="offshore-intro">These are role categories, not advertised vacancies. Openings and requirements depend on the specific project and client.</p>
+        <label class="offshore-filter" for="offshore-job-filter">Filter by category
+          <select id="offshore-job-filter">
+            <option value="all">All categories</option>
+            <option value="drilling">Drilling</option>
+            <option value="marine">Marine</option>
+            <option value="engineering">Engineering</option>
+            <option value="mechanical">Mechanical</option>
+            <option value="electrical">Electrical</option>
+            <option value="instrumentation">Instrumentation</option>
+            <option value="rigging">Rigging</option>
+            <option value="hse">HSE</option>
+            <option value="subsea">Subsea</option>
+            <option value="catering">Catering</option>
+            <option value="logistics">Logistics</option>
+          </select>
+        </label>
+        <div id="offshore-jobs" class="job-grid offshore-job-grid">
+          <article class="job card offshore-job-category" data-offshore-category="marine"><h4>Master / Captain</h4><p class="role-desc">Leading vessel operations with safety, navigation and crew management expertise.</p><button class="btn btn-outline apply-btn" data-job="Offshore - Master / Captain">Apply Now</button></article>
+          <article class="job card offshore-job-category" data-offshore-category="marine"><h4>Chief Officer</h4><p class="role-desc">Supporting vessel operations, deck management and onboard safety procedures.</p><button class="btn btn-outline apply-btn" data-job="Offshore - Chief Officer">Apply Now</button></article>
+          <article class="job card offshore-job-category" data-offshore-category="engineering"><h4>Chief Engineer</h4><p class="role-desc">Managing marine engineering systems, machinery and technical operations.</p><button class="btn btn-outline apply-btn" data-job="Offshore - Chief Engineer">Apply Now</button></article>
+          <article class="job card offshore-job-category" data-offshore-category="engineering electrical"><h4>ETO</h4><p class="role-desc">Handling electrical, electronic and automation systems across marine operations.</p><button class="btn btn-outline apply-btn" data-job="Offshore - ETO">Apply Now</button></article>
+          <article class="job card offshore-job-category" data-offshore-category="drilling"><h4>Driller</h4><p class="role-desc">Operating and monitoring drilling systems during offshore drilling operations.</p><button class="btn btn-outline apply-btn" data-job="Offshore - Driller">Apply Now</button></article>
+          <article class="job card offshore-job-category" data-offshore-category="drilling"><h4>Roustabout</h4><p class="role-desc">Supporting deck, drilling and general offshore operations with a strong safety focus.</p><button class="btn btn-outline apply-btn" data-job="Offshore - Roustabout">Apply Now</button></article>
+          <article class="job card offshore-job-category" data-offshore-category="drilling"><h4>Floorman</h4><p class="role-desc">Supporting drilling-floor activities, equipment handling and rig operations.</p><button class="btn btn-outline apply-btn" data-job="Offshore - Floorman">Apply Now</button></article>
+          <article class="job card offshore-job-category" data-offshore-category="drilling"><h4>Derrickman</h4><p class="role-desc">Supporting drilling operations and derrick-related activities on offshore rigs.</p><button class="btn btn-outline apply-btn" data-job="Offshore - Derrickman">Apply Now</button></article>
+          <article class="job card offshore-job-category" data-offshore-category="marine"><h4>AB / Able Seaman</h4><p class="role-desc">Supporting deck operations, maintenance, mooring and safe vessel operations.</p><button class="btn btn-outline apply-btn" data-job="Offshore - AB / Able Seaman">Apply Now</button></article>
+          <article class="job card offshore-job-category" data-offshore-category="marine"><h4>OS / Ordinary Seaman</h4><p class="role-desc">Assisting with deck operations, maintenance and general marine duties.</p><button class="btn btn-outline apply-btn" data-job="Offshore - OS / Ordinary Seaman">Apply Now</button></article>
+          <article class="job card offshore-job-category" data-offshore-category="marine engineering"><h4>Oiler / Wiper</h4><p class="role-desc">Supporting engine-room operations, machinery maintenance and housekeeping duties.</p><button class="btn btn-outline apply-btn" data-job="Offshore - Oiler / Wiper">Apply Now</button></article>
+          <article class="job card offshore-job-category" data-offshore-category="rigging"><h4>Offshore Rigger</h4><p class="role-desc">Supporting lifting, rigging and material-handling operations on offshore facilities.</p><button class="btn btn-outline apply-btn" data-job="Offshore - Offshore Rigger">Apply Now</button></article>
+          <article class="job card offshore-job-category" data-offshore-category="rigging"><h4>Crane Operator</h4><p class="role-desc">Operating offshore lifting equipment safely and efficiently in accordance with site procedures.</p><button class="btn btn-outline apply-btn" data-job="Offshore - Crane Operator">Apply Now</button></article>
+          <article class="job card offshore-job-category" data-offshore-category="mechanical"><h4>Mechanical Technician</h4><p class="role-desc">Maintaining and supporting mechanical equipment across offshore and onshore operations.</p><button class="btn btn-outline apply-btn" data-job="Offshore - Mechanical Technician">Apply Now</button></article>
+          <article class="job card offshore-job-category" data-offshore-category="electrical"><h4>Electrical Technician</h4><p class="role-desc">Supporting electrical systems, equipment maintenance and troubleshooting.</p><button class="btn btn-outline apply-btn" data-job="Offshore - Electrical Technician">Apply Now</button></article>
+          <article class="job card offshore-job-category" data-offshore-category="instrumentation"><h4>Instrument Technician</h4><p class="role-desc">Maintaining instrumentation, control systems and process measurement equipment.</p><button class="btn btn-outline apply-btn" data-job="Offshore - Instrument Technician">Apply Now</button></article>
+          <article class="job card offshore-job-category" data-offshore-category="hse"><h4>HSE Officer</h4><p class="role-desc">Supporting health, safety and environmental standards across marine and offshore operations.</p><button class="btn btn-outline apply-btn" data-job="Offshore - HSE Officer">Apply Now</button></article>
+          <article class="job card offshore-job-category" data-offshore-category="mechanical"><h4>Pipe Fitter</h4><p class="role-desc">Carrying out pipe installation, maintenance and fabrication work across industrial projects.</p><button class="btn btn-outline apply-btn" data-job="Offshore - Pipe Fitter">Apply Now</button></article>
+          <article class="job card offshore-job-category" data-offshore-category="mechanical"><h4>Welder / Fabricator</h4><p class="role-desc">Performing welding and fabrication activities for marine, offshore and industrial projects.</p><button class="btn btn-outline apply-btn" data-job="Offshore - Welder / Fabricator">Apply Now</button></article>
+          <article class="job card offshore-job-category" data-offshore-category="catering"><h4>Cook / Steward</h4><p class="role-desc">Supporting catering, accommodation and welfare services for offshore and marine personnel.</p><button class="btn btn-outline apply-btn" data-job="Offshore - Cook / Steward">Apply Now</button></article>
         </div>
-        <div class="job card">
-          <h4 data-i18n="job_cleaners">Cleaners</h4>
-          <p class="role-desc" data-i18n="desc_cleaners">Maintaining hygiene standards for safe environments.</p>
-          <button class="btn btn-outline apply-btn" data-job="Cleaners" data-i18n="btn_apply">Apply Now</button>
-        </div>
-        <div class="job card">
-          <h4 data-i18n="job_housemaids">Housemaids</h4>
-          <p class="role-desc" data-i18n="desc_housemaids">Trusted domestic support for peace of mind.</p>
-          <button class="btn btn-outline apply-btn" data-job="Housemaids" data-i18n="btn_apply">Apply Now</button>
-        </div>
-        <div class="job card">
-          <h4 data-i18n="job_cashiers">Cashiers</h4>
-          <p class="role-desc" data-i18n="desc_cashiers">Efficient handling of transactions with accuracy.</p>
-          <button class="btn btn-outline apply-btn" data-job="Cashiers" data-i18n="btn_apply">Apply Now</button>
-        </div>
-        <div class="job card">
-          <h4 data-i18n="job_officeboys">Office Boys</h4>
-          <p class="role-desc" data-i18n="desc_officeboys">Ensuring smooth daily office operations.</p>
-          <button class="btn btn-outline apply-btn" data-job="Office Boys" data-i18n="btn_apply">Apply Now</button>
-        </div>
-        <div class="job card">
-          <h4 data-i18n="job_hospitality">Hospitality Staff</h4>
-          <p class="role-desc" data-i18n="desc_hospitality">Delivering exceptional guest experiences.</p>
-          <button class="btn btn-outline apply-btn" data-job="Hospitality Staff" data-i18n="btn_apply">Apply Now</button>
-        </div>
-        <div class="job card">
-          <h4 data-i18n="job_construction">Construction Workers</h4>
-          <p class="role-desc" data-i18n="desc_construction">Building the future with skill and dedication.</p>
-          <button class="btn btn-outline apply-btn" data-job="Construction Workers" data-i18n="btn_apply">Apply Now</button>
-        </div>
+      </div>
+
+      <div class="offshore-subsection" data-aos="fade-up">
+        <h3>Offshore Safety</h3>
+        <p class="offshore-intro">Safe offshore work depends on competent personnel, clear procedures and consistent hazard awareness at every stage of an operation.</p>
+        <ul class="gcc-grid">
+          <li class="gcc-item">HSE</li><li class="gcc-item">Permit to Work</li><li class="gcc-item">Risk Assessment</li><li class="gcc-item">Job Safety Analysis</li>
+          <li class="gcc-item">Toolbox Talks</li><li class="gcc-item">PPE</li><li class="gcc-item">Working at Height</li><li class="gcc-item">Confined Space</li>
+          <li class="gcc-item">Lifting Safety</li><li class="gcc-item">Dropped Object Prevention</li><li class="gcc-item">Fire Safety</li><li class="gcc-item">Emergency Response</li>
+          <li class="gcc-item">Muster &amp; Evacuation</li><li class="gcc-item">Helicopter Safety</li><li class="gcc-item">Marine Safety</li><li class="gcc-item">Environmental Protection</li>
+        </ul>
+      </div>
+
+      <div class="offshore-subsection" data-aos="fade-up">
+        <h3>Certifications &amp; Documentation</h3>
+        <ul class="gcc-grid">
+          <li class="gcc-item">STCW</li><li class="gcc-item">BOSIET</li><li class="gcc-item">FOET</li><li class="gcc-item">HUET</li>
+          <li class="gcc-item">OPITO Certifications</li><li class="gcc-item">H2S</li><li class="gcc-item">Medical Fitness</li>
+          <li class="gcc-item">CDC / Seaman's Book, where applicable</li><li class="gcc-item">Trade Certificates</li><li class="gcc-item">Competency Certificates</li>
+          <li class="gcc-item">Crane / Rigging Certificates</li><li class="gcc-item">Experience Certificates</li><li class="gcc-item">Training Records</li>
+        </ul>
+        <p class="offshore-intro">Certification and document requirements vary by role, vessel, rig, client and jurisdiction. Candidates should confirm current requirements for each assignment.</p>
+      </div>
+
+      <div class="offshore-subsection" data-aos="fade-up">
+        <h3>Offshore Work Environment</h3>
+        <ul class="gcc-grid">
+          <li class="gcc-item"><strong>Rotational Work</strong><span class="offshore-detail">Assignments may follow a rotation set by the employer or project.</span></li>
+          <li class="gcc-item"><strong>Offshore Accommodation</strong><span class="offshore-detail">Personnel live in designated accommodation while offshore.</span></li>
+          <li class="gcc-item"><strong>Shift-Based Operations</strong><span class="offshore-detail">Work is organized into operational shifts.</span></li>
+          <li class="gcc-item"><strong>Safety Induction</strong><span class="offshore-detail">Site and task inductions support safe work practices.</span></li>
+          <li class="gcc-item"><strong>Offshore Transportation</strong><span class="offshore-detail">Transfers are coordinated through approved transport arrangements.</span></li>
+          <li class="gcc-item"><strong>Helicopter / Marine Transfer</strong><span class="offshore-detail">Transfer method depends on the assignment and operating conditions.</span></li>
+          <li class="gcc-item"><strong>Team-Based Operations</strong><span class="offshore-detail">Work relies on coordination across disciplines and crews.</span></li>
+          <li class="gcc-item"><strong>Emergency Procedures</strong><span class="offshore-detail">Personnel follow site-specific response, muster and evacuation procedures.</span></li>
+        </ul>
       </div>
     </section>
 
@@ -228,12 +1067,41 @@
           <input type="hidden" name="job" id="job">
           <label><span data-i18n="lbl_name">Name</span><input type="text" name="name" placeholder="Full Name" data-i18n-placeholder="ph_name" required></label>
           <label><span data-i18n="lbl_email">Email</span><input type="email" name="email" placeholder="Email" data-i18n-placeholder="ph_email" required></label>
+          <label><span data-i18n="lbl_rank">Rank / Position</span><input type="text" name="rank" placeholder="e.g. Chief Officer" data-i18n-placeholder="ph_rank"></label>
           <label><span data-i18n="lbl_phone">Phone</span><input type="tel" name="phone" placeholder="Phone Number" data-i18n-placeholder="ph_phone" required></label>
           <button class="btn btn-primary btn-full-width" type="submit" data-i18n="btn_submit">Submit</button>
         </form>
       </div>
     </section>
   </main>
+
+  <section class="why container" aria-labelledby="commitment-title">
+    <h2 id="commitment-title">Our Commitment</h2>
+    <div class="why-grid commitment-grid">
+      <article class="why-item card">
+        <h4>Professionalism</h4>
+        <p>Connecting employers with qualified and experienced manpower.</p>
+      </article>
+      <article class="why-item card">
+        <h4>Compliance</h4>
+        <p>Supporting proper documentation, verification and applicable recruitment requirements.</p>
+      </article>
+      <article class="why-item card">
+        <h4>Safety</h4>
+        <p>Promoting competent personnel for marine, offshore and industrial environments.</p>
+      </article>
+      <article class="why-item card">
+        <h4>Integrity</h4>
+        <p>Building professional relationships through transparent communication.</p>
+      </article>
+    </div>
+    <p class="offshore-intro">Looking for qualified manpower or searching for your next marine, offshore or onshore opportunity?</p>
+    <div class="recruitment-cta">
+      <a href="#register" class="btn btn-primary">Hire Talent</a>
+      <a href="#offshore-jobs" class="btn btn-outline">Find Jobs</a>
+      <a href="#register" class="btn btn-outline">Submit Your CV</a>
+    </div>
+  </section>
 
   <footer id="contact-footer" class="site-footer" role="contentinfo" data-aos="fade-in">
     <div class="container">
@@ -243,46 +1111,430 @@
             <img src="https://i.ibb.co/BV9HbC2Z/Screenshot-2026-02-28-at-12-26-07-AM.png" alt="Al Kabeer Logo" height="50">
             <span class="brand-name">AL KABEER & PARTNERS</span>
           </div>
-          <p class="footer-tagline">
-            Trusted international recruitment partner for compliant, transparent, and ethical staffing solutions across the GCC.
-          </p>
-        </div>
-        
-        <div class="footer-col map-col">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.684349678964!2d55.3745!3d25.3145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDE4JzUyLjIiTiA1NcKwMjInMjguMiJF!5e0!3m2!1sen!2sae!4v1630000000000!5m2!1sen!2sae" width="100%" height="200" style="border:0; border-radius:12px; opacity:0.8;" allowfullscreen="" loading="lazy"></iframe>
+          <p class="footer-tagline"><em>Marine • Offshore • Onshore • Technical Manpower Solutions</em></p>
+          <h4>Company</h4>
+          <ul class="footer-links-list">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#marine-jobs">Marine Recruitment</a></li>
+            <li><a href="#offshore">Offshore Recruitment</a></li>
+            <li><a href="#offshore">Onshore Recruitment</a></li>
+            <li><a href="#offshore-jobs">Technical Manpower</a></li>
+            <li><a href="#offshore-jobs">Careers</a></li>
+            <li><a href="#contact-footer">Contact Us</a></li>
+          </ul>
         </div>
 
         <div class="footer-col">
-          <h4>Contact Us</h4>
+          <h4>Marine &amp; Offshore</h4>
+          <ul class="footer-links-list">
+            <li><a href="#marine-jobs">Seafarers &amp; Marine Crew</a></li>
+            <li><a href="#offshore-jobs">Offshore Rig Personnel</a></li>
+            <li><a href="#offshore-jobs">Drilling Personnel</a></li>
+            <li><a href="#offshore-jobs">Engineering &amp; Technical Staff</a></li>
+            <li><a href="#offshore-jobs">Crane &amp; Lifting Personnel</a></li>
+            <li><a href="#offshore-jobs">HSE Professionals</a></li>
+            <li><a href="#offshore-jobs">Skilled Trades</a></li>
+            <li><a href="#offshore">Offshore Support Personnel</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Candidates</h4>
+          <ul class="footer-links-list">
+            <li><a href="#offshore-jobs">Find Jobs</a></li>
+            <li><a href="#register">Submit Your CV</a></li>
+            <li><a href="#marine-jobs">Current Vacancies</a></li>
+            <li><a href="#register">Candidate Registration</a></li>
+            <li><a href="#offshore">Required Documents</a></li>
+            <li><a href="#register">Recruitment Process</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Our Office</h4>
           <ul class="footer-contact-list">
-            <li><span class="icon">📍</span> Al Fardan Centre, 211A–211B<br>Corniche Street, Al Majaz 3<br>Al Majaz, Sharjah, UAE</li>
+            <li><span class="icon">📍</span> <strong>Khatm Al Shiklah, Al Ain, Abu Dhabi, UAE</strong><br>Near the <strong>UAE–Oman Border</strong><br>Khatm Al Shiklah Border Crossing, E40<br>Al Ain Region, Abu Dhabi, United Arab Emirates</li>
+            <li><span class="icon">⚓</span> Marine • Offshore • Onshore Manpower Solutions</li>
+            <li>Conveniently located in the Al Ain region near the UAE–Oman border, supporting our regional marine, offshore, onshore and technical manpower operations.</li>
             <li><span class="icon">📞</span> <a href="tel:+971543474662">+971 54 347 4662</a></li>
-            <li><span class="icon">📞</span> <a href="tel:+971583014116">Reet Assistant: +971 58 301 4116</a></li>
+            <li><span class="icon">📞</span> <a href="tel:+971583014116">Recruitment Assistant: +971 58 301 4116</a> <a href="https://wa.me/971583014116" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Recruitment Assistant" title="WhatsApp Recruitment Assistant"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="vertical-align:middle; fill:#25D366"><path d="M20.52 3.48A11.94 11.94 0 0012 0C5.373 0 .012 5.36 0 12c0 2.12.552 4.19 1.6 6.02L0 24l6.24-1.64A12 12 0 0024 12c0-3.2-1.25-6.19-3.48-8.52zM17.1 14.2c-.25-.12-1.47-.72-1.7-.8-.23-.07-.4-.12-.57.12-.17.25-.66.8-.82.96-.15.16-.3.18-.55.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.48-1.39-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.3.37-.45.12-.15.16-.25.25-.42.09-.17.05-.31-.03-.42-.08-.11-.57-1.37-.78-1.87-.2-.49-.41-.42-.57-.42-.15 0-.33-.02-.51-.02-.18 0-.47.07-.72.34-.25.27-.95.93-.95 2.28 0 1.34.98 2.64 1.12 2.82.14.17 1.93 2.98 4.68 4.18 3 1.34 3.46 1.14 4.08 1.07.62-.07 1.97-.8 2.25-1.57.28-.77.28-1.43.2-1.57-.08-.14-.28-.22-.57-.35z"/></svg></a></li>
             <li><span class="icon">✉️</span> <a href="mailto:alkabeerrequirement@gmail.com">alkabeerrequirement@gmail.com</a></li>
-            <li><span class="icon">🌐</span> <a href="https://alkabeerandpartners.com/" target="_blank">www.alkabeerandpartners.com</a></li>
+            <li><span class="icon">🌐</span> <a href="http://www.alkabeerandpartners.com/" target="_blank" rel="noopener noreferrer">www.alkabeerandpartners.com</a></li>
             <li>
-              <a href="https://wa.me/971543474662" class="whatsapp-btn-glow" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/971583014116" class="whatsapp-btn-glow" target="_blank" rel="noopener noreferrer">
                 <svg width="18" height="18" viewBox="0 0 24 24" style="fill: #fff; margin-right: 8px;"><path d="M20.52 3.48A11.94 11.94 0 0012 0C5.373 0 .012 5.36 0 12c0 2.12.552 4.19 1.6 6.02L0 24l6.24-1.64A12 12 0 0024 12c0-3.2-1.25-6.19-3.48-8.52zM17.1 14.2c-.25-.12-1.47-.72-1.7-.8-.23-.07-.4-.12-.57.12-.17.25-.66.8-.82.96-.15.16-.3.18-.55.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.48-1.39-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.3.37-.45.12-.15.16-.25.25-.42.09-.17.05-.31-.03-.42-.08-.11-.57-1.37-.78-1.87-.2-.49-.41-.42-.57-.42-.15 0-.33-.02-.51-.02-.18 0-.47.07-.72.34-.25.27-.95.93-.95 2.28 0 1.34.98 2.64 1.12 2.82.14.17 1.93 2.98 4.68 4.18 3 1.34 3.46 1.14 4.08 1.07.62-.07 1.97-.8 2.25-1.57.28-.77.28-1.43.2-1.57-.08-.14-.28-.22-.57-.35z"></path></svg>
-                WhatsApp
+                WhatsApp: +971 58 301 4116
               </a>
             </li>
           </ul>
+          <iframe class="footer-map" title="Al Kabeer & Partners office near Khatm Al Shiklah, Al Ain" src="https://maps.google.com/maps?q=Khatm%20Al%20Shiklah%20Border%20Crossing%20E40%2C%20Al%20Ain%2C%20Abu%20Dhabi&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" loading="lazy" allowfullscreen></iframe>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <small>© <span id="year">2026</span> AL KABEER & PARTNERS. All rights reserved.</small>
+        <div>AL KABEER &amp; PARTNERS</div>
+        <small><em>Marine • Offshore • Onshore • Technical Manpower Solutions</em></small>
+        <small>© 2024 Al Kabeer &amp; Partners. All Rights Reserved.</small>
+        <div class="footer-legal"><span>Privacy Policy</span><span>|</span><span>Terms &amp; Conditions</span><span>|</span><span>Disclaimer</span></div>
       </div>
     </div>
   </footer>
 
-  <a class="whatsapp-fab" href="https://wa.me/971543474662" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+  <a class="whatsapp-fab" href="https://wa.me/971583014116" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Recruitment Assistant">
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.52 3.48A11.94 11.94 0 0012 0C5.373 0 .012 5.36 0 12c0 2.12.552 4.19 1.6 6.02L0 24l6.24-1.64A12 12 0 0024 12c0-3.2-1.25-6.19-3.48-8.52z" fill="#25D366"/><path d="M17.1 14.2c-.25-.12-1.47-.72-1.7-.8-.23-.07-.4-.12-.57.12-.17.25-.66.8-.82.96-.15.16-.3.18-.55.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.48-1.39-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.3.37-.45.12-.15.16-.25.25-.42.09-.17.05-.31-.03-.42-.08-.11-.57-1.37-.78-1.87-.2-.49-.41-.42-.57-.42-.15 0-.33-.02-.51-.02-.18 0-.47.07-.72.34-.25.27-.95.93-.95 2.28 0 1.34.98 2.64 1.12 2.82.14.17 1.93 2.98 4.68 4.18 3 1.34 3.46 1.14 4.08 1.07.62-.07 1.97-.8 2.25-1.57.28-.77.28-1.43.2-1.57-.08-.14-.28-.22-.57-.35z" fill="#fff"/></svg>
   </a>
 
-  <noscript><style>.modal{display:none!important}.main-nav{display:block!important}</style><div style="padding:12px;background:#fff3cd;color:#856404">This site works best with JavaScript enabled.</div></noscript>
+  <noscript><div style="padding:12px;background:#fff3cd;color:#856404">This site works best with JavaScript enabled.</div></noscript>
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded',()=>{
+
+  // --- Mobile Navigation Toggle ---
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+  const offshoreJobFilter = document.getElementById('offshore-job-filter');
+
+  if (offshoreJobFilter) {
+    offshoreJobFilter.addEventListener('change', () => {
+      const selectedCategory = offshoreJobFilter.value;
+      document.querySelectorAll('.offshore-job-category').forEach(category => {
+        const categories = category.dataset.offshoreCategory.split(' ');
+        category.hidden = selectedCategory !== 'all' && !categories.includes(selectedCategory);
+      });
+    });
+  }
+
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    // Close menu when a link is clicked
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+
+    // Close menu when clicking outside of it
+    document.addEventListener('click', (e) => {
+      // Check if the menu is active and the click is outside both the menu and the hamburger
+      if (navLinks.classList.contains('active') && !navLinks.contains(e.target) && !hamburger.contains(e.target)) {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      }
+    });
+  }
+  
+  // --- Language Switcher Logic ---
+  const translations = {
+    en: {
+      nav_home: "Home", nav_marine: "Marine", nav_service: "Service", nav_jobs: "Jobs", nav_about: "About", nav_contact: "Contact", nav_register: "Register",
+      hero_badge: "Government Licensed Agency",
+      hero_title_1: "Powering Marine Operations with", hero_title_2: "Skilled Global Talent",
+      hero_desc: "Your trusted manpower partner for Marine, Offshore and Onshore operations. We connect qualified seafarers, offshore professionals and skilled technical personnel with leading maritime, energy and industrial projects across the GCC and global markets.",
+      btn_hire: "Hire Marine & Offshore Talent", btn_find_jobs: "Find Opportunities",
+      metric_years: "Professional Crew & Technical Personnel", metric_compliance: "Skilled Manpower Solutions",
+      about_title: "About Al Kabeer & Partners",
+      about_desc: "Al Kabeer & Partners is a professional manpower and recruitment partner specializing in Marine, Offshore, Onshore and Technical workforce solutions. We connect qualified seafarers, offshore professionals, engineers and skilled personnel with marine, energy and industrial projects across the GCC and international markets.",
+      about_li_1: "Marine & Offshore Manpower Solutions",
+      about_li_2: "Qualified Seafarers & Technical Professionals",
+      about_li_3: "Offshore Rig & Vessel Personnel",
+      about_li_4: "Engineering, Skilled Trades & HSE Professionals",
+      about_li_5: "Professional Candidate Screening & Documentation",
+      about_li_6: "Manpower Support for Marine, Energy & Industrial Projects",
+      why_title: "Why Choose Us",
+      why_1_title: "Compliance First", why_1_desc: "All processes handled through approved government channels.",
+      why_2_title: "Verified Employers", why_2_desc: "We partner only with trusted employers across the GCC.",
+      why_3_title: "Dedicated Support", why_3_desc: "End-to-end assistance from screening to onboarding.",
+      why_4_title: "Transparent Pricing", why_4_desc: "Clear policies, receipts and no hidden fees.",
+      services_title: "Our Services",
+      serv_1_title: "Permanent Staffing", serv_1_desc: "Strategic talent acquisition for senior, mid-level, and specialized corporate roles.",
+      serv_2_title: "Bulk & Contract Hiring", serv_2_desc: "Scalable workforce deployment for the hospitality, construction, and facilities management sectors.",
+      serv_3_title: "Visa & Compliance", serv_3_desc: "Comprehensive visa processing, medical clearance coordination, and government liaison services.",
+      serv_4_title: "Employer Solutions", serv_4_desc: "Tailored recruitment strategies, rigorous background verification, and seamless onboarding support.",
+      gcc_title: "International Opportunities in the GCC",
+      gcc_desc: "We provide recruitment services across the Gulf Cooperation Council (GCC) countries, connecting talent with leading employers in:",
+      country_uae: "🇦🇪 UAE", country_ksa: "🇸🇦 Saudi Arabia", country_qatar: "🇶🇦 Qatar", country_kuwait: "🇰🇼 Kuwait", country_oman: "🇴🇲 Oman", country_bahrain: "🇧🇭 Bahrain",
+      jobs_title: "Current Vacancies",
+      job_security: "Security Guards",
+      desc_security: "Protecting assets with vigilance and integrity.",
+      job_cleaners: "Cleaners",
+      desc_cleaners: "Maintaining hygiene standards for safe environments.",
+      job_housemaids: "Housemaids",
+      desc_housemaids: "Trusted domestic support for peace of mind.",
+      job_cashiers: "Cashiers",
+      desc_cashiers: "Efficient handling of transactions with accuracy.",
+      job_officeboys: "Office Boys",
+      desc_officeboys: "Ensuring smooth daily office operations.",
+      job_hospitality: "Hospitality Staff",
+      desc_hospitality: "Delivering exceptional guest experiences.",
+      job_construction: "Construction Workers",
+      desc_construction: "Building the future with skill and dedication.",
+      btn_apply: "Apply Now",
+      register_title: "Apply / Register",
+      register_desc: "Click \"Apply Now\" on a job to start, or fill out the form for general registration.",
+      lbl_name: "Name", ph_name: "Full Name",
+      lbl_email: "Email", ph_email: "Email",
+      lbl_phone: "Phone", ph_phone: "Phone Number",
+      btn_submit: "Submit",
+      footer_tagline: "Trusted international recruitment partner for compliant, transparent, and ethical staffing solutions across the GCC.",
+      footer_contact: "Contact Us",
+      footer_address: "Al Fardan Centre, 211A–211B<br>Corniche Street, Al Majaz 3<br>Al Majaz, Sharjah, UAE",
+      btn_whatsapp: "WhatsApp",
+      footer_rights: "All rights reserved.",
+      
+      // Marine Page English
+      mar_hero_badge: "ISO 9001:2015 Certified",
+      mar_hero_title_span: "MARINE",
+      mar_hero_desc: "Premier Marine Crewing Agency. We have successfully placed 8000+ Crew worldwide on Tankers, Bulk Carriers, Containers, and Offshore vessels.",
+      mar_btn_vacancies: "View Vacancies", mar_btn_pool: "Join Our Pool",
+      mar_profile_title: "Marine Division Profile",
+      mar_profile_desc: "Al Kabeer Marine is a dedicated division specializing in the recruitment and management of seafarers for the global maritime industry. We are fully MLC 2006 compliant and maintain a vast database of qualified officers and ratings.",
+      mar_profile_li_1: "Supplying crew for Main Fleet & Offshore",
+      mar_profile_li_2: "Strict pre-departure medical & background checks",
+      mar_profile_li_3: "STCW certification verification",
+      mar_profile_li_4: "24/7 Crew support & logistics",
+      mar_vessel_title: "Vessel Types Served",
+      mar_vessel_1: "🛢️ Tankers (VLCC)", mar_vessel_2: "📦 Bulk Carriers", mar_vessel_3: "🚢 Containers", mar_vessel_4: "⚓ Offshore / DP",
+      mar_vacancies_title: "Urgent Marine Vacancies",
+      mar_job_master: "Master / Captain", mar_job_master_exp: "Exp: 24M+ on Tankers",
+      mar_job_ce: "Chief Engineer", mar_job_ce_exp: "Exp: ME Engine Required",
+      mar_job_co: "Chief Officer", mar_job_co_exp: "Vessel: Bulk Carrier",
+      mar_job_eto: "Electrical Officer (ETO)", mar_job_eto_exp: "High Voltage Cert. Req",
+      mar_job_pump: "Pumpman", mar_job_pump_exp: "Exp: Framo Pumps",
+      mar_job_rating: "Able Seaman / Oiler", mar_job_rating_exp: "COP Holder Only",
+      mar_reg_desc: "Submit your CV for Marine positions.",
+      lbl_rank: "Rank / Position", ph_rank: "e.g. Chief Officer", mar_btn_submit: "Submit Application"
+    },
+    ar: {
+      nav_home: "الرئيسية", nav_marine: "القسم البحري", nav_service: "خدماتنا", nav_jobs: "وظائف", nav_about: "من نحن", nav_contact: "اتصل بنا", nav_register: "تسجيل",
+      hero_badge: "وكالة مرخصة حكومياً",
+      hero_title_1: "ندعم العمليات البحرية عبر", hero_title_2: "كفاءات عالمية ماهرة",
+      hero_desc: "شريككم الموثوق لتوفير القوى العاملة لعمليات الملاحة البحرية والأوفشور والبرية. نربط البحارة المؤهلين ومتخصصي الأوفشور والفنيين المهرة بمشاريع الملاحة والطاقة والصناعة في الخليج والأسواق العالمية.",
+      btn_hire: "توظيف كوادر بحرية وأوفشور", btn_find_jobs: "استكشف الفرص",
+      metric_years: "أطقم بحرية وكوادر فنية", metric_compliance: "حلول قوى عاملة ماهرة",
+      about_title: "عن الكبير وشركاه",
+      about_desc: "الكبير وشركاه شريك متخصص في توفير القوى العاملة والتوظيف لقطاعات الملاحة البحرية والأوفشور والقطاع البري والوظائف الفنية. نربط البحارة المؤهلين ومتخصصي الأوفشور والمهندسين والكوادر الماهرة بمشاريع الملاحة والطاقة والصناعة في الخليج والأسواق العالمية.",
+      about_li_1: "حلول قوى عاملة للملاحة البحرية والأوفشور",
+      about_li_2: "بحارة مؤهلون ومتخصصون فنيون",
+      about_li_3: "كوادر منصات الحفر والسفن البحرية",
+      about_li_4: "مهندسون وحرفيون ومتخصصون في الصحة والسلامة والبيئة",
+      about_li_5: "فحص مهني للمرشحين وتجهيز الوثائق",
+      about_li_6: "دعم القوى العاملة لمشاريع الملاحة والطاقة والصناعة",
+      why_title: "لماذا تختارنا",
+      why_1_title: "الامتثال أولاً", why_1_desc: "تتم جميع العمليات من خلال القنوات الحكومية المعتمدة.",
+      why_2_title: "أصحاب عمل موثوقون", why_2_desc: "نحن نتشارك فقط مع أصحاب العمل الموثوق بهم في جميع أنحاء الخليج.",
+      why_3_title: "دعم مخصص", why_3_desc: "مساعدة شاملة من الفحص إلى التوظيف.",
+      why_4_title: "تسعير شفاف", why_4_desc: "سياسات واضحة، إيصالات ولا رسوم خفية.",
+      services_title: "خدماتنا",
+      serv_1_title: "التوظيف الدائم", serv_1_desc: "اكتساب المواهب الاستراتيجية للأدوار العليا والمتوسطة والمتخصصة.",
+      serv_2_title: "التوظيف الجماعي والتعاقدي", serv_2_desc: "نشر القوى العاملة القابلة للتطوير لقطاعات الضيافة والبناء وإدارة المرافق.",
+      serv_3_title: "التأشيرات والامتثال", serv_3_desc: "معالجة شاملة للتأشيرات وتنسيق التصاريح الطبية وخدمات الاتصال الحكومي.",
+      serv_4_title: "حلول أصحاب العمل", serv_4_desc: "استراتيجيات توظيف مخصصة، وتحقق صارم من الخلفية، ودعم سلس للتوظيف.",
+      gcc_title: "فرص دولية في دول مجلس التعاون الخليجي",
+      gcc_desc: "نقدم خدمات التوظيف في جميع أنحاء دول مجلس التعاون الخليجي، ونربط المواهب بأصحاب العمل الرائدين في:",
+      country_uae: "🇦🇪 الإمارات", country_ksa: "🇸🇦 السعودية", country_qatar: "🇶🇦 قطر", country_kuwait: "🇰🇼 الكويت", country_oman: "🇴🇲 عمان", country_bahrain: "🇧🇭 البحرين",
+      jobs_title: "الوظائف الحالية",
+      job_security: "حراس أمن",
+      desc_security: "حماية الأصول بيقظة ونزاهة.",
+      job_cleaners: "عمال نظافة",
+      desc_cleaners: "الحفاظ على معايير النظافة لبيئات آمنة.",
+      job_housemaids: "عاملات منزلية",
+      desc_housemaids: "دعم منزلي موثوق لراحة البال.",
+      job_cashiers: "صرافين (كاشير)",
+      desc_cashiers: "التعامل الفعال مع المعاملات بدقة.",
+      job_officeboys: "عمال مكتب (أوفيس بوي)",
+      desc_officeboys: "ضمان سير العمليات المكتبية اليومية بسلاسة.",
+      job_hospitality: "موظفي ضيافة",
+      desc_hospitality: "تقديم تجارب استثنائية للضيوف.",
+      job_construction: "عمال بناء",
+      desc_construction: "بناء المستقبل بمهارة وتفاني.",
+      btn_apply: "قدم الآن",
+      register_title: "التقديم / التسجيل",
+      register_desc: "انقر فوق \"قدم الآن\" على وظيفة للبدء، أو املأ النموذج للتسجيل العام.",
+      lbl_name: "الاسم", ph_name: "الاسم الكامل",
+      lbl_email: "البريد الإلكتروني", ph_email: "البريد الإلكتروني",
+      lbl_phone: "الهاتف", ph_phone: "رقم الهاتف",
+      btn_submit: "إرسال",
+      footer_tagline: "شريك التوظيف الدولي الموثوق لحلول التوظيف المتوافقة والشفافة والأخلاقية في جميع أنحاء الخليج.",
+      footer_contact: "اتصل بنا",
+      footer_address: "مركز الفردان، 211A–211B<br>شارع الكورنيش، المجاز 3<br>المجاز، الشارقة، الإمارات",
+      btn_whatsapp: "واتساب",
+      footer_rights: "جميع الحقوق محفوظة.",
+
+      // Marine Page Arabic
+      mar_hero_badge: "حاصلة على شهادة ISO 9001:2015",
+      mar_hero_title_span: "البحرية",
+      mar_hero_desc: "وكالة رائدة في توظيف الطواقم البحرية. قمنا بنجاح بتوظيف أكثر من 8000 فرد طاقم حول العالم على الناقلات، وسفن البضائع السائبة، والحاويات، والسفن البحرية.",
+      mar_btn_vacancies: "عرض الشواغر", mar_btn_pool: "انضم إلى فريقنا",
+      mar_profile_title: "ملف القسم البحري",
+      mar_profile_desc: "الكبير البحرية هو قسم مخصص متخصص في توظيف وإدارة البحارة للصناعة البحرية العالمية. نحن متوافقون تمامًا مع اتفاقية العمل البحري MLC 2006 ونحتفظ بقاعدة بيانات ضخمة من الضباط والبحارة المؤهلين.",
+      mar_profile_li_1: "توفير أطقم للأسطول الرئيسي والبحري",
+      mar_profile_li_2: "فحوصات طبية وخلفية صارمة قبل المغادرة",
+      mar_profile_li_3: "التحقق من شهادات STCW",
+      mar_profile_li_4: "دعم لوجستي للطاقم على مدار 24/7",
+      mar_vessel_title: "أنواع السفن المخدومة",
+      mar_vessel_1: "🛢️ ناقلات النفط (VLCC)", mar_vessel_2: "📦 سفن البضائع السائبة", mar_vessel_3: "🚢 سفن الحاويات", mar_vessel_4: "⚓ سفن الأوفشور / DP",
+      mar_vacancies_title: "شواغر بحرية عاجلة",
+      mar_job_master: "قبطان / ماستر", mar_job_master_exp: "خبرة: 24 شهر+ على الناقلات",
+      mar_job_ce: "كبير مهندسين", mar_job_ce_exp: "خبرة: محركات ME مطلوبة",
+      mar_job_co: "كبير ضباط", mar_job_co_exp: "السفينة: بضائع سائبة",
+      mar_job_eto: "ضابط كهرباء (ETO)", mar_job_eto_exp: "شهادة الجهد العالي مطلوبة",
+      mar_job_pump: "فني مضخات", mar_job_pump_exp: "خبرة: مضخات Framo",
+      mar_job_rating: "بحار مؤهل / مزيت", mar_job_rating_exp: "حاملي شهادة الكفاءة فقط",
+      mar_reg_desc: "أرسل سيرتك الذاتية للوظائف البحرية.",
+      lbl_rank: "الرتبة / المنصب", ph_rank: "مثال: كبير ضباط", mar_btn_submit: "تقديم الطلب"
+    }
+  };
+
+  const langToggle = document.getElementById('lang-toggle');
+  let currentLang = 'en';
+
+  if(langToggle) {
+    langToggle.addEventListener('click', () => {
+      currentLang = currentLang === 'en' ? 'ar' : 'en';
+      updateLanguage(currentLang);
+    });
+  }
+
+  function updateLanguage(lang) {
+    // 1. Update Direction
+    document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+    document.documentElement.setAttribute('lang', lang);
+
+    // 2. Update Text Content
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if(translations[lang][key]) {
+        // Use innerHTML for keys that might contain <br> (like footer address)
+        if(key === 'footer_address' || key === 'hero_title_1') {
+           el.innerHTML = translations[lang][key];
+        } else {
+           el.textContent = translations[lang][key];
+        }
+      }
+    });
+
+    // 3. Update Placeholders
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+      const key = el.getAttribute('data-i18n-placeholder');
+      if(translations[lang][key]) {
+        el.setAttribute('placeholder', translations[lang][key]);
+      }
+    });
+
+    // 4. Update Button Text
+    if(langToggle) langToggle.textContent = lang === 'en' ? 'EN | العربية' : 'English | عربي';
+  }
+
+  // Initialize AOS
+  if(typeof AOS !== 'undefined') AOS.init({ once: true, offset: 100 });
+
+  // EmailJS init
+  (function () {
+    if (typeof emailjs !== "undefined") {
+      emailjs.init("rFKUtDn1xK-KOlPZd");
+    }
+  })();
+  
+  // --- Scroll-to-form logic ---
+  const registerSection = document.getElementById('register');
+  const jobInput = document.getElementById('job');
+  const rankInput = document.querySelector('#applyForm [name="rank"]');
+
+  document.querySelectorAll('.marine-register-btn').forEach(link => {
+    link.addEventListener('click', () => {
+      if (jobInput) jobInput.value = 'Marine General Application';
+      if (rankInput) rankInput.required = true;
+    });
+  });
+  
+  document.querySelectorAll('.apply-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      const jobTitle = button.dataset.job;
+      if (jobInput) {
+        // Set the job title in the hidden input
+        jobInput.value = jobTitle || 'General Application';
+      }
+      if (rankInput) rankInput.required = Boolean(jobTitle && jobTitle.startsWith('Marine - '));
+      if (registerSection) {
+        // Scroll to the form
+        registerSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+
+  // --- Form Submission via EmailJS ---
+  const applyForm = document.getElementById("applyForm");
+  if (applyForm) {
+    applyForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      if (typeof emailjs === "undefined") {
+        alert("Application service is temporarily unavailable. Please try again later.");
+        return;
+      }
+
+      const button = this.querySelector("button");
+      const originalText = button.textContent;
+      button.textContent = "Sending...";
+      button.disabled = true;
+
+      emailjs.sendForm("service_c8xsn7p", "template_3qv07td", this)
+        .then(function () {
+          alert("Application sent successfully!");
+          applyForm.reset();
+          if(jobInput) jobInput.value = ''; // Clear job title
+          if(rankInput) rankInput.required = false;
+        }, function (error) {
+          alert("Failed to send. Check console.");
+          console.error(error);
+        })
+        .finally(function() {
+          button.textContent = originalText;
+          button.disabled = false;
+        });
+    });
+  }
+
+  // Smooth scroll for internal links
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click', (e)=>{
+      const href = a.getAttribute('href');
+      if(href.length>1){
+        const target = document.querySelector(href);
+        if(target){ 
+          e.preventDefault(); 
+          target.scrollIntoView({behavior:'smooth',block:'start'}); 
+        }
+      }
+    })
+  });
+
+  // 3D tilt interaction for cards
+  if (window.matchMedia('(hover: hover)').matches) {
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = (e.clientX - rect.left) / rect.width;
+        const y = (e.clientY - rect.top) / rect.height;
+        const rotY = (x - 0.5) * 12;
+        const rotX = (0.5 - y) * 10;
+        card.style.transform = `perspective(1000px) rotateX(${rotX}deg) rotateY(${rotY}deg) scale3d(1.02, 1.02, 1.02)`;
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+      });
+    });
+  }
+
+});
+  </script>
 </body>
 </html>
